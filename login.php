@@ -13,9 +13,9 @@
     <div class="container">
         <form class="form-signin" action="login_result.php" method="post">
             <h2 class="form-signin-heading">Please sign in</h2>
-            <label for="inputemail" class="sr-only">email</label>
-            <input type="text" id="inputemail" class="form-control" placeholder="email" required autofocus name="email">
-            <label for="inputPa ssword" class="sr-only">Password</label>
+            <label for="inputemail" class="sr-only">Email</label>
+            <input type="text" id="inputemail" class="form-control" placeholder="Email" required autofocus name="email">
+            <label for="inputPassword" class="sr-only">Password</label>
             <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="password">
             <div class="checkbox">
                 <label>
@@ -24,12 +24,13 @@
             </div>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
             <?php
-                // Determine the base URL dynamically
+                // Display the registration link
                 $register = 'register.php';
-
-                // Display the registration link with the dynamic base URL
                 echo '<p>Not a user? <a href="' . $register . '">Register</a></p>';
             ?>
+            <div class="text-center">
+                <a href="forgot_password.php">Forgot Password?</a>
+            </div>
         </form>
     </div>
 </body>
